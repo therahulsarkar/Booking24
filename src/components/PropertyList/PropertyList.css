@@ -1,0 +1,83 @@
+.pList{
+    width: 100%;
+    max-width: 1024px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .pListItem{
+    flex:1;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  }
+  
+  .pListImg{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+
+  .pListTitles{
+    padding: 7px 15px;
+  }
+  
+  .pListTitles>h1{
+    font-size: 1rem;
+    color: #444;
+  }
+  
+  .pListTitles>h2{
+    font-size: 0.8rem;
+    font-weight: 400;
+  }
+
+  @media screen and (max-width: 480px ) {
+    .pList{
+      width: 100%;
+      max-width: 100vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 10px 20px;
+      /* background-color: aquamarine; */
+      /* height: 90rem; */
+      /* margin-bottom: 5vh; */
+    }
+    
+
+  .pListItem{
+    flex:1;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    /* height: 20rem; */
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  }
+  .pListItem:last-child{
+    margin-bottom: 5vh;
+  }
+  .pListTitles{
+    margin: 1rem 0;
+  }
+  .pListTitles>h1{
+    font-size: 1.5rem;
+    color: #444;
+  }
+  .pListImg{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .pListTitles>h2{
+    font-size: 1rem;
+    font-weight: 400;
+  }
+  
+}

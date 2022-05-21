@@ -1,0 +1,170 @@
+.header {
+    background: rgb(25,135,255);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.437) 0%, rgba(12, 0, 122, 0.862) 100%), url('../../assets/header2.jpg');
+    color: white;
+    /* background-blend-mode: overlay; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .headerContainer {
+    width: 100%;
+    max-width: 1024px;
+    margin: 20px 0px 100px 0px;
+  }
+  
+  .headerContainer.listMode {
+    margin: 20px 0px 0px 0px;
+  }
+  
+  .headerTitle {
+    font-size: 2.5rem;
+  }
+  .headerList {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 50px;
+  }
+  
+  .headerListItem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .headerListItem:hover{
+    transform: scale(1.04);
+  }
+  
+
+
+  .headerListItem.active {
+    border: 1.5px solid white;
+    padding: 10px 15px;
+    border-radius: 25px;
+    transform: scale(1.08);
+  }
+  
+  .headerDesc {
+    margin: 20px 0px;
+  }
+  
+  .headerBtn {
+    background-color: transparent;
+    /* margin-top: 1rem; */
+    color: #ffffff;
+    font-weight: 500;
+    border: 2px solid #ffffff;
+    border-radius: 25px;
+    padding: 10px 15px;
+    cursor: pointer;
+  }
+  
+
+  .headerBtnSearch {
+    background-color: transparent;
+    color: #febb02;
+    font-weight: 500;
+    border: 2px solid #febb02;
+    border-radius: 25px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .headerBtnSearch:hover {
+    background-color: #febb02;
+    color: #fff;
+    font-weight: 500;
+    border: 2px solid #febb02;
+    border-radius: 25px;
+    padding: 10px 15px;
+    cursor: pointer;
+  }
+
+
+  .headerSearch {
+    height: 4rem;
+    background-color: #fff;
+    border: 3px solid #febb02;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 0px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: -25px;
+    width: 100%;
+    max-width: 1024px;
+  }
+  
+  .headerIcon {
+    color: rgb(80, 80, 80);
+  }
+  
+  .headerSearchItem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .headerSearchInput {
+    border: none;
+    outline: none;
+  }
+  
+  .headerSearchText {
+    color: rgb(80, 80, 80);
+    cursor: pointer;
+  }
+  
+  .date {
+    position: absolute;
+    top: 50px;
+    z-index: 2;
+  }
+  
+  .options {
+    z-index: 2;
+    position: absolute;
+    top: 50px;
+    background-color: white;
+    color: gray;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
+  }
+  
+  .optionItem {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+  }
+  
+  .optionCounter {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 12px;
+    color: black;
+  }
+  
+  .optionCounterButton {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #0071c2;
+    color: #0071c2;
+    cursor: pointer;
+    background-color: white;
+  }
+  
+  .optionCounterButton:disabled {
+    cursor: not-allowed;
+  }
